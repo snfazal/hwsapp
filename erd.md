@@ -1,0 +1,30 @@
+# User
+id: Number,
+username: String,
+email: String,
+phone_number: Number,
+password_digest: String,
+favorite_wines: Array,
+favorite_posts: Array,
+is_Admin: Boolean
+created_at: Date,
+last_updated: Date
+
+# Wine
+id: Number,
+name: String,
+type: String,
+country_of_origin: String,
+region: String,
+rating: Number,
+description: String,
+created_at: Date,
+last_updated: Date
+
+# Post
+id: Number,
+post: String,
+description: String,
+user_id: String,
+created_at: Date,
+last_updated: Date
