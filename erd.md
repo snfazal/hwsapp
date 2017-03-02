@@ -4,9 +4,8 @@ username: String,
 email: String,
 phone_number: Number,
 password_digest: String,
-favorite_wines: Array,
-favorite_posts: Array,
-is_Admin: Boolean
+favorite_wines: has_and_belongs_to_many :wines,
+favorite_posts: has_and_belongs_to_many :posts,
 created_at: Date,
 last_updated: Date
 
@@ -20,6 +19,7 @@ rating: Number,
 description: String,
 created_at: Date,
 last_updated: Date
+belongs_to :
 
 # Post
 id: Number,
