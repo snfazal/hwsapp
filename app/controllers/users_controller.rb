@@ -13,13 +13,18 @@ class UsersController < ApplicationController
 
   def show
     render json: {status: 200, user: current_user}
+
   end
 
   def login
-    user = User.find_by(username: params[:user][:username])
+    test
+    puts params[:user][:email]
+    puts params[:user][:password]
+    user = User.find_by(email: params[:user][:email])
+    puts user
     # binding.pry
     if user && user.authenticate(params[:user][:password])
-      token = token(user.id, user.username)
+      token = token(user.id, user.email)
 
       render json: {status: 201, user: user, token: token}
     else
@@ -35,7 +40,7 @@ class UsersController < ApplicationController
 
   def payload(id, email)
     {
-      exp: (Time.now + 15.minutes).to_i,
+      # exp: (Time.now + 15.minutes).to_i,
       iat: Time.now.to_i,
       iss: 'wdir-matey',
       user: {
@@ -46,6 +51,6 @@ class UsersController < ApplicationController
   end
 
   def user_params
-    params.required(:user).permit(:email,  :password, :username, :phone_number)
+    params.required(:user).permit(:email, :password, :username, :phone_number)
   end
 end

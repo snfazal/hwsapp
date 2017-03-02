@@ -132,7 +132,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bcrypt (~> 3.1.7)
+  bcrypt
   byebug
   faker
   jwt
