@@ -43,3 +43,7 @@ last_updated: Date
 
 
 # Wireframes
+
+[Homepage](https://app.moqups.com/snfazal@gmail.com/NUQ7lJcGFD/edit/page/ab42bb62b)
+[Blog page](https://app.moqups.com/snfazal@gmail.com/NUQ7lJcGFD/edit/page/a4056f3fe)
+[Blog Index](https://app.moqups.com/snfazal@gmail.com/NUQ7lJcGFD/edit/page/a3afaad55)
