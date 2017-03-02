@@ -21,6 +21,7 @@ description: String,
 created_by: Integer, (user id)
 created_at: Date,
 last_updated: Date
+post_id: Integer (has_and_belongs_to_many)
 
 # Post
 id: Number,
@@ -29,6 +30,7 @@ description: String,
 created_by: Integer,
 created_at: Date, (user id)
 last_updated: Date
+wine_id: Integer (has_and_belongs_to_many)
 
 # Favorite
 id: Integer,
