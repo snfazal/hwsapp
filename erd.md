@@ -1,4 +1,4 @@
-# User
+## User ##
 id: Number,
 username: String,
 email: String,
@@ -9,7 +9,7 @@ favorite_posts: has_and_belongs_to_many :posts,
 created_at: Date,
 last_updated: Date
 
-# Wine
+## Wine ##
 id: Number,
 name: String,
 type: String,
@@ -21,7 +21,7 @@ created_at: Date,
 last_updated: Date
 belongs_to :
 
-# Post
+## Post ##
 id: Number,
 post: String,
 description: String,
