@@ -1,7 +1,12 @@
 class ApplicationController < ActionController::API
   # IS THE USER THE LOGGED IN
   def authenticate
+    puts 'authenticate'
     render json: {status: 401, message: "unauthorized"} unless decode_token(bearer_token)
+  end
+
+  def test
+    puts "MADE"
   end
 
   # DOES THE USER OWN THE RESOURCE THEY'RE ASKING FOR
