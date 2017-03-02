@@ -4,8 +4,9 @@ username: String,
 email: String,
 phone_number: Number,
 password_digest: String,
-favorite_wines: has_and_belongs_to_many :wines,
-favorite_posts: has_and_belongs_to_many :posts,
+favorite_id: Integer, (has one)
+favorite_users: Integer, (has many through favorite)
+favorite_posts: Integer, (has many through favorite)
 created_at: Date,
 last_updated: Date
 
@@ -17,14 +18,19 @@ country_of_origin: String,
 region: String,
 rating: Number,
 description: String,
+created_by: Integer, (user id)
 created_at: Date,
 last_updated: Date
-belongs_to :
 
 # Post
 id: Number,
 post: String,
 description: String,
-user_id: String,
-created_at: Date,
+created_by: Integer,
+created_at: Date, (user id)
 last_updated: Date
+
+# Favorite
+id: Integer,
+wine_id: Integer,
+post_id: Integer
