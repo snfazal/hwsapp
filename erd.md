@@ -1,4 +1,4 @@
-# User
+## User ##
 id: Number,
 username: String,
 email: String,
@@ -10,7 +10,7 @@ favorite_posts: Integer, (has many through favorite)
 created_at: Date,
 last_updated: Date
 
-# Wine
+## Wine ##
 id: Number,
 name: String,
 type: String,
@@ -23,7 +23,7 @@ created_at: Date,
 last_updated: Date
 post_id: Integer (has_and_belongs_to_many)
 
-# Post
+## Post ##
 id: Number,
 post: String,
 description: String,
