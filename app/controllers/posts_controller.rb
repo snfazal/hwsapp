@@ -20,4 +20,8 @@ def index
 end
 
 def update
-  render json: { status: 200, post: }
+  post = Post.find(params[:id])
+  post.update(post_params)
+
+  render json: { status: 200, post: post }
+end
