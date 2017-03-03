@@ -2,7 +2,7 @@ class WinesController < ApplicationController
 
 def create
   puts wine_params
-  # binding.pry
+  binding.pry
   wine = current_user.wines.new(wine_params)
   puts wine
   if wine.save
