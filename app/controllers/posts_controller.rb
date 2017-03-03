@@ -31,3 +31,7 @@ def destroy
 
   render json: { status: 204, message: 'resource DELETED successfully', post: current_user.posts }
 end
+
+def post_params
+  params.required(:post).permit(:body, :description :user_id)
+end
