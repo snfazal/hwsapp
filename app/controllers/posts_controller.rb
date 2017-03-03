@@ -10,3 +10,14 @@ def create
     render json: { status: 422, user: post.errors}
   end
 end
+
+def show
+  render json: { status: 200, post: Post.find(params[:id]) }
+end
+
+def index
+  render json: { status: 200, post: Post.all }
+end
+
+def update
+  render json: { status: 200, post: }
