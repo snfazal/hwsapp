@@ -20,6 +20,21 @@ class WinesController < ApplicationController
     render json: { status: 200, wines: Wine.all }
   end
 
+  def update
+    wine = Wine.find(params[:id])
+    wine.update(wine_params)
+
+    render json: { status: 200, wine: wine }
+  end
+
+  def destroy
+    Wine.destroy(params[:id])
+
+    render json: {status: 204,
+      message: 'resource deleted succesfully', wine: current_user.wines
+    }
+  end
+
   def wine_params
     params.required(:wine).permit( :name, :kind, :country, :region, :rating, :description, :user_id)
   end
