@@ -1,5 +1,5 @@
 class WinesController < ApplicationController
-  before_action :authorize, only: [:update, :delete]
+  # before_action :authorize, only: [:update, :delete]
 
   def create
     puts wine_params
