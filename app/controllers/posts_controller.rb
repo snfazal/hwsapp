@@ -2,7 +2,7 @@ class PostsController < ApplicationController
 
 def create
   puts post_params
-  posts = current_user.posts.new(posts_params)
+  post = current_user.posts.new(post_params)
   puts post
   if post.save
     render json: { status: 201, post: post}
@@ -34,4 +34,5 @@ end
 
 def post_params
   params.required(:post).permit(:body, :description, :user_id)
+end
 end
