@@ -33,5 +33,5 @@ def destroy
 end
 
 def post_params
-  params.required(:post).permit(:body, :description :user_id)
+  params.required(:post).permit(:body, :description, :user_id)
 end
