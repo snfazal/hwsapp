@@ -14,6 +14,11 @@ class ApplicationController < ActionController::API
     render json: {status: 401, message: "unauthorized"} unless current_user.id == params[:id].to_i
   end
 
+  def authorize_wine
+    puts current_user.id
+    render json: {status: 401, message: "unauthorized"} unless current_user.id == params[:user_id].to_i
+  end
+
   def bearer_token
     pattern = /^Bearer /
     header  = request.env["HTTP_AUTHORIZATION"] # <= env

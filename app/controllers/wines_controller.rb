@@ -1,5 +1,6 @@
 class WinesController < ApplicationController
-  # before_action :authorize, only: [:update, :delete]
+  before_action :authorize_wine, only: [:update, :delete]
+
 
   def create
     puts wine_params
@@ -22,9 +23,12 @@ class WinesController < ApplicationController
 
   def update
     wine = Wine.find(params[:id])
-    wine.update(wine_params)
 
-    render json: { status: 200, wine: wine }
+    if wine.update(wine_params)
+      render json: { status: 201, wine: wine}
+    else
+      render json: { status: 422, user: wine.errors}
+    end
   end
 
   def destroy
