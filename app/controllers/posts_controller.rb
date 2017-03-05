@@ -27,7 +27,7 @@ def update
 end
 
 def destroy
-  Post.detroy(params[:id])
+  Post.destroy(params[:id])
 
   render json: { status: 204, message: 'resource DELETED successfully', post: current_user.posts }
 end
