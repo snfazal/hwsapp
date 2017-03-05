@@ -4,8 +4,8 @@ Rails.application.routes.draw do
     collection do
       post '/login', to: 'users#login'
     end
-  resources :favorites
   end
+  resources :favorites
   resources :posts
   resources :wines
 end
