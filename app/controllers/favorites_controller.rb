@@ -12,7 +12,7 @@ class FavoritesController < ApplicationController
   end
 
   def destroy
-    fav = current_user.favorites.where(wine_id: fav_params[:id])
+    fav = current_user.favorites.where(wine_id: params[:id])
     Favorite.destroy(fav)
 
     render json: {status: 204,
