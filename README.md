@@ -1,6 +1,10 @@
 # hwsapp
 web-application for Hinsdale wine shop
 
+[heroku front-end](https://sommlife.herokuapp.com/#/)
+[github front-end](https://github.com/snfazal/hwsapp-ui)
+
+[gihub back-end](https://github.com/snfazal/hwsapp)
 ## Overview
 Sommlife is a web application built using a Rails back-end and an Angular front-end. The purpose of this application is to bring collaboration to how our users drink wine everyday. Working as a social media platform, Sommlife allows users to upload their favorite, or not so favorite wines as they please. Users can view all favorited wines on the platform, as well as posts created by other users about wines.
 
@@ -138,7 +142,9 @@ One of our earliest challenges came about as we set up and review our routes. We
 
 Styling Images with Bulma:
 
-Our final challenge came about just before it was time to present our application. We had trouble manipulating Bulma to make the image_urls align with the responsive design we so desired. Our fix to this issue can 
+Our final challenge came about just before it was time to present our application. We had trouble manipulating Bulma to make the image_urls align with the responsive design we so desired.
+
+Our fix to this issue came from the Bulma documentation. We realized that Bulma favored images that were squarea as opposed to the elongated bottle images that were longer than they were wide. We were able to manipulate our images to be pixally more equal in width and height.  After, nested them within a tile class on bulma to get them to become more responsive.
 
 ## Final Thoughts
 Furthermore, we're quite pleased with the product we were able to produce in just 5 days time. As a team we collaborated on both the front and back-end of the project. Initially, we chose to pair program the
