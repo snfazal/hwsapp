@@ -7,8 +7,12 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Wine.destroy_all
+User.destroy_all
 
-  Wine.create!([{
+user = User.create!(username: 'a', email: 'a@a.com', password: 'a')
+
+
+  user.wines.create!([{
     name: "Meiomi 2014",
     kind: "Pinot Noir",
     country: "USA",
