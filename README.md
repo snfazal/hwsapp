@@ -1,6 +1,10 @@
 # hwsapp
 web-application for Hinsdale wine shop
 
+## Overview
+Sommlife is a web application built using a Rails back-end and an Angular front-end. The purpose of this application is to bring collaboration to how our users drink wine everyday. Working as a social media platform, Sommlife allows users to upload their favorite, or not so favorite wines as they please. Users can view all favorited wines on the platform, as well as posts created by other users about wines.
+
+The application uses mock data that we have seeded into our back-end in order to simulate our user interface. Below is the planning process over the last 5 days that we used to create Sommlife.
 
 
 ## User Stories
@@ -8,10 +12,12 @@ web-application for Hinsdale wine shop
 As a user I want to:
 - Sign up for an account if I am a new user
 - Login into my existing account
-- View my own favorited wines and posts
+- View my own favorited wines
 - Add a new wine that I like/dislike for others to see
-- Edit my created wine/post whenever
+- Edit my created wine/post
 - Delete my create wine/post
+- Login into my account to view my favorites on the favorited page
+
 
 ## Models
 User - Standard user account features for current_user
@@ -61,19 +67,45 @@ created_at: Date,
 last_updated: Date
 ```
 ### SQL Tables
+Favorites:
+- t.integer  "wine_id"
+- t.datetime "created_at", null: false
+- t.datetime "updated_at", null: false
+- t.integer  "user_id"
 
-# Wireframes
+Posts:
+- t.string   "body"
+- t.string   "description"
+- t.datetime "created_at",  null: false
+- t.datetime "updated_at",  null: false
 
-[Homepage](https://app.moqups.com/snfazal@gmail.com/NUQ7lJcGFD/edit/page/ab42bb62b)
+Users:
+- t.string   "username"
+- t.string   "email"
+- t.integer  "phone_number"
+- t.string   "password_digest"  
 
-[Blog page](https://app.moqups.com/snfazal@gmail.com/NUQ7lJcGFD/edit/page/a4056f3fe)
+Wines:
+- t.string   "name"
+- t.string   "kind"
+- t.string   "country"
+- t.string   "region"
+- t.integer  "rating"
+- t.string   "description"
+- t.integer  "user_id"
+## Wireframes
 
-[Blog Index](https://app.moqups.com/snfazal@gmail.com/NUQ7lJcGFD/edit/page/a3afaad55)
+[Homepage](/public/img/homepage.png)
+
+[Blog page](/public/img/postshow.png)
+
+[Blog Index](/public/img/favorite.png)
 
 ## Technologies Used
 
 ### Front-End
 - CSS Framework: [Bulma](http://bulma.io/)
+- HTML5
 - Angular.js
 - Express.js
 
@@ -82,5 +114,23 @@ last_updated: Date
 - postgresql
 
 ## MVP
+- Create 3 models: Users, Posts, Wine, (and Favorites!)
+- User Routes: Signup, Login, Logout
+- Wine Routes: Create, Read, Update, Destroy
+- Post Routes: Full CRUD
+- User Authentication
+- Website Design
 
 ## Reach Goals
+- Add Post route for user posts
+- Add a favorites model to enable users to favorite wines
+- Add a framework for CSS styling
+- Be able to search wines by categories for user
+- Add external API for wines (lack on market)
+- Admin Panel for weekly blog posts to be scheduled
+- Add user collaborated ratings to be seen on favorites
+
+## Project Challenges
+
+## Final Thoughts
+Furthermore, we're quite pleased with the product we were able to produce in just 5 days time. As a team we collaborated on both the front and back-end of the project. Initially, we chose to pair program the
