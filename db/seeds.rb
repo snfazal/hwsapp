@@ -29,7 +29,7 @@ user2 = User.create!(username: 'b', email: 'b@b.com', password: 'b')
     region: "Napa Valley",
     rating: "97",
     description: "full bodied with aromas of black currants, blueberries, floral with hints of tobacco",
-    image_url: "img/wines/opus.jpg"
+    image_url: "img/wines/opus.gif"
     },
     {
     name: "Orin Swift Machete 2014",
@@ -46,7 +46,7 @@ user2 = User.create!(username: 'b', email: 'b@b.com', password: 'b')
     country: "New Zealand",
     region: "Marlborough",
     rating: "90",
-    description: "Mix of passion fruit, lime, mango and green apple, with a light and smooth body", image_url: "img/wines/kono.png"
+    description: "Mix of passion fruit, lime, mango and green apple, with a light and smooth body", image_url: "img/wines/kono.jpg"
     },
     {
       name: "Freakshow",
