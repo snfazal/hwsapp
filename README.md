@@ -132,5 +132,13 @@ Wines:
 
 ## Project Challenges
 
+Favorites Model:
+
+One of our earliest challenges came about as we set up and review our routes. We knew we wanted Users to be able to be able to favorite products and in turn share those favorites in order to ignite a community atmosphere within our application. We solved this issue by setting up Active Record Associations between wines, posts and favorites. We needed to add foreign_keys onto both wines and posts so that individual wines could then be favorited and added to the current_user's account.
+
+Styling Images with Bulma:
+
+Our final challenge came about just before it was time to present our application. We had trouble manipulating Bulma to make the image_urls align with the responsive design we so desired. Our fix to this issue can 
+
 ## Final Thoughts
 Furthermore, we're quite pleased with the product we were able to produce in just 5 days time. As a team we collaborated on both the front and back-end of the project. Initially, we chose to pair program the
