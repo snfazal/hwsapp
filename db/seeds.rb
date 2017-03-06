@@ -14,7 +14,7 @@ Wine.destroy_all
   kono = Wine.new(name: "Kono 2015", kind: "Sauvignon Blanc", country: "New Zealand", region: "Marlborough", rating: "90", description: "Mix of passion fruit, lime, mango and green apple, with a light and smooth body", image_url: "http://f1.wine-searcher.net/images/labels/58/47/kono-sauvignon-blanc-marlborough-new-zealand-10735847.jpg")
   freakshow = Wine.new(name: "Freakshow", kind: "Cabernet Sauvignon", country: "USA", region: "Lodi, California", rating: "91", description: "Dark color, spicy aromas with a luxurious dry texture", image_url: "http://www.luekensliquors.com/images/Micheal%20David%20Freakshow%202012%20Cabernet%20Sauvig.jpg")
 
-
+  [meiomi, opusOne, machete, kono, freakshow].each { |wine| wine.save }
 
 
   # { name: "", kind: "", country: "", region: "", rating: "", description: "", image_url: ""},
