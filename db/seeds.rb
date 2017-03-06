@@ -20,7 +20,7 @@ user2 = User.create!(username: 'b', email: 'b@b.com', password: 'b')
     country: "USA",
     region: "Sonoma Valley",
     rating: "92",
-    description: "oaky tones with black currants", image_url: "https://www.owliquors.com/image/cache/data/wine/meiomi/meiomi-pinot-noir-bottle-500x500.jpg"
+    description: "oaky tones with black currants", image_url: "img/wines/meiomi.jpg"
     },
     {
     name: "Opus One 2013",
@@ -29,7 +29,7 @@ user2 = User.create!(username: 'b', email: 'b@b.com', password: 'b')
     region: "Napa Valley",
     rating: "97",
     description: "full bodied with aromas of black currants, blueberries, floral with hints of tobacco",
-    image_url: "http://f1.wine-searcher.net/images/labels/96/72/opus-one-napa-valley-usa-10059672.jpg"
+    image_url: "img/wines/opus.jpg"
     },
     {
     name: "Orin Swift Machete 2014",
@@ -37,7 +37,7 @@ user2 = User.create!(username: 'b', email: 'b@b.com', password: 'b')
     country: "USA",
     region: "California",
     rating: "94",
-    description: "Mouthful of flavors including Earl Grey Tea, dark chocolate and toasted gingerbread", image_url: "https://www.jjbuckley.com/data/Vintage/202335/thumb_463x1162_2014-12979-750.jpg"
+    description: "Mouthful of flavors including Earl Grey Tea, dark chocolate and toasted gingerbread", image_url: "img/wines/machete.jpg"
     }])
 
   user2.wines.create!([{
@@ -46,7 +46,7 @@ user2 = User.create!(username: 'b', email: 'b@b.com', password: 'b')
     country: "New Zealand",
     region: "Marlborough",
     rating: "90",
-    description: "Mix of passion fruit, lime, mango and green apple, with a light and smooth body", image_url: "http://f1.wine-searcher.net/images/labels/58/47/kono-sauvignon-blanc-marlborough-new-zealand-10735847.jpg"
+    description: "Mix of passion fruit, lime, mango and green apple, with a light and smooth body", image_url: "img/wines/kono.png"
     },
     {
       name: "Freakshow",
@@ -55,7 +55,7 @@ user2 = User.create!(username: 'b', email: 'b@b.com', password: 'b')
       region: "Lodi, California",
       rating: "91",
       description: "Dark color, spicy aromas with a luxurious dry texture",
-      image_url: "http://www.luekensliquors.com/images/Micheal%20David%20Freakshow%202012%20Cabernet%20Sauvig.jpg"
+      image_url: "img/wines/freakshow.jpg"
     }])
 
   user1.posts.create!([{
